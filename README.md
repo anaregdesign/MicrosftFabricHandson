@@ -36,8 +36,9 @@
 ## Microsoft Fabricの概要
 Microsoft Fabricは従来のPowerBIを拡張する形で提供されます。PowerBI Serviceではワークスペースを作成する際に、Pro、Premiumなどのライセンスを選択できましたが、
 この度追加されたライセンスである「ファブリック容量」を選択することで、従来の機能に加えてMicrosoft Fabric特有の機能を使うことができるようになります。
-<img width="878" alt="Screenshot 2023-12-13 at 15 41 42" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/e9e3b3b7-b426-412b-b77e-8ead54809ed0">
+<img width="400" alt="Screenshot 2023-12-13 at 15 41 42" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/e9e3b3b7-b426-412b-b77e-8ead54809ed0">
 
+「ファブリック容量」が割り当てられたワークスペースにおいては、データ基盤の構築に有用な様々な機能が作成できます。
 
 
 
