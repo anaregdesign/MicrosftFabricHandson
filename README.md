@@ -65,9 +65,14 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 この機能は将来的にCosmosDBやPostgresSQL、Snowflakeなどの対応が予定されており、ETLの作業を大幅に簡単にします。
 
 ### SQLエンドポイント
+<img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/091a0ccf-e835-468b-b259-f1de1ed0ca08">
+
+
+レイクハウスに対してODBCを含むSQL Server互換のインターフェースを提供します。サーバレス構成のため`create table`など一部の構文の利用が制限されていますが、多くのアドホック分析シナリオに対応できます。
 
 
 ### データフロー
+
 
 
 ### パイプライン
