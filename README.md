@@ -100,7 +100,8 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 
 ## データのコピー
 * パイプラインのコピーアシスタントで、サンプルデータをレイクハウスにコピーしてくる
-* 接続情報
+* あまりgithubを意識させないような話し方。いろんなデータソースがある中の一つ
+* 接続情報 
   * protocol: https
   * endpoint: https://github.com/anaregdesign/MicrosoftFabricHandson/raw/main/data/
   * files
