@@ -67,15 +67,21 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 ### SQLエンドポイント
 <img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/091a0ccf-e835-468b-b259-f1de1ed0ca08">
 
-
 レイクハウスに対してODBCを含むSQL Server互換のインターフェースを提供します。サーバレス構成のため`create table`など一部の構文の利用が制限されていますが、多くのアドホック分析シナリオに対応できます。
 
 
-### データフロー
+### データフローGen2
 
+<img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/2298a15f-ba05-49e9-8d5d-4b803addcd16">
 
+非開発者向けのノーコードETLツールです。様々なデータソースから読み込んだデータを処理して、様々なストレージに記録することができます。
+多くのシナリオではレイクハウス上にあるDeltalake形式のテーブルを読み込み、処理したものを再びレイクハウスに記録するために使用します。
 
 ### パイプライン
+グラフィカルなノーコードツールによって、様々なインフラを横断して実行される様々な処理の、依存関係とその実行スケジュールを定義するために使用します。
+データフローや、ストアドプロシージャ・SparkNotebookなど、様々な処理の実行に田翁しており、定義した処理はアクティビティと呼びます。
+
+#### パイプラインのコピーアシスタント
 
 
 
