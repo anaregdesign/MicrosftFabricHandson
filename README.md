@@ -53,6 +53,8 @@ Microsoft Fabricは従来のPowerBIを拡張する形で提供されます。Pow
 ここではファブリック容量で新たに追加された、主要なリソースを紹介します。
 
 ### レイクハウス
+<img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/1e9c4c1d-9ad1-4562-a992-b670e92a64c5">
+
 データを蓄積するストレージです。とくに構造化データはDeltalakeというオープンな形式で取り扱うことができ、様々な外部の計算リソースとの柔軟な連携を可能にしています。
 
 #### レイクハウスのショートカット機能
