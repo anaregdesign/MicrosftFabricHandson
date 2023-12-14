@@ -110,5 +110,11 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
     - dboOrderDetails.parquet
 
 ## データ加工
-## セマンティックモデル
-## 
+* データフローGen2をりよう
+* 簡単なjoinとselect
+* silverに保存
+
+## 可視化
+* コピーツールを用いてRetailSamleDataをコピーしてくる（前工程が追いつかなかった人への救済
+* セマンティックモデルを作成
+* 簡単な積み上げ棒グラフを作ってもらう
