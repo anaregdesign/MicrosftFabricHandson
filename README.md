@@ -89,13 +89,26 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 パイプラインのコピーアシスタントは、このコピーアクティビティを簡単に作成するためのウィザードです。
 
 
-
-
-
 # Handson
-
+下書き
 ## レイクハウスの作成
+* レイクハウスを３つ作成する
+  * bronze
+  * silver
+  * gol
+* レイクハウスと同時に作成されるリソースを確認する   
+
 ## データのコピー
+* パイプラインのコピーアシスタントで、サンプルデータをレイクハウスにコピーしてくる
+* 接続情報
+  * protocol: https
+  * endpoint: https://github.com/anaregdesign/MicrosoftFabricHandson/raw/main/data/
+  * files
+    - dboAddresses.parquet
+    - dboCustomers.parquet
+    - dboOrders.parquet
+    - dboOrderDetails.parquet
+
 ## データ加工
 ## セマンティックモデル
 ## 
