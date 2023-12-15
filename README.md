@@ -144,12 +144,24 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 ## データ加工
 
 ### 手順概要
+* 完璧に再現できなくても「加工できた感」があればOKだと思ってます
 * データフローGen2を利用
 * silverに保存
- * `bronze`に配置した`orders`と`order_details`を`OrderID`をkeyに左外部結合
-  * `silver.fact_orders`
- * `addresses`はそのまま
-  * `silver.addresses`へ
+  * `bronze`に配置した`orders`と`order_details`を`OrderID`をkeyに左外部結合
+    * `silver.fact_orders`へ
+  * `addresses`はそのまま
+    * `silver.dim_addresses`へ
+  * `customers`はそのまま
+    * `silver.dim_customers`へ
+ 
+   
+### 参考
+* データフローの完成図
+<img width="800" alt="Screenshot 2023-12-15 at 15 44 34" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/369918b6-5140-4e14-a430-5916bd07bf85">
+
+* `shilver`レイクハウスの状態
+
+
 
 ## 可視化
 * コピーツールを用いてRetailSamleDataをコピーしてくる（前工程が追いつかなかった人への救済
