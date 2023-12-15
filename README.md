@@ -85,23 +85,35 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 
 
 グラフィカルなノーコードツールによって、様々なインフラを横断して実行される様々な処理の、依存関係とその実行スケジュールを定義するために使用します。
-データフローや、ストアドプロシージャ・SparkNotebookなど、様々な処理の実行に田翁しており、定義した処理はアクティビティと呼びます。
+データフローや、ストアドプロシージャ・SparkNotebookなど、様々な処理のが実行でき、定義した処理はアクティビティと呼びます。
 
 #### パイプラインのコピーアシスタント
+
+
 アクティビティの一つに「データのコピー」と言われるデータを転送するためのアクティビティがあります。
 パイプラインのコピーアシスタントは、このコピーアクティビティを簡単に作成するためのウィザードです。
 
 
 # Handson
 下書き
-## レイクハウスの作成
+## 1.レイクハウスの作成
+
+### 手順概要
 * レイクハウスを３つ作成する
   * bronze
   * silver
-  * gol
-* レイクハウスと同時に作成されるリソースを確認する   
+  * gold
+* レイクハウスと同時に作成されるリソースを確認する
+
+### 参考
+* 完了した状態
+  
+<img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/11101cf0-7f88-4d37-966b-ec5f9f7495f1">
+
 
 ## データのコピー
+
+### 手順概要
 * パイプラインのコピーアシスタントで、サンプルデータをレイクハウスにコピーしてくる
 * あまりgithubを意識させないような話し方。いろんなデータソースがある中の一つ
 * 接続情報 
@@ -112,11 +124,32 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
     - dboCustomers.parquet
     - dboOrders.parquet
     - dboOrderDetails.parquet
+* それぞれのファイルに対して４つのコピーアクティビティをコピーアシスタントで作成
+
+
+### 参考
+* パイプラインのコピーアシスタントでデモデータに対する接続の作成
+
+<img width="400" alt="Screenshot 2023-12-15 at 15 11 39" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/f08eea98-736c-467e-aef0-52f837effe59">
+
+* ４つそれぞれのファイルに対してコピーアクティビティを作成する
+  
+<img width="400" alt="Screenshot 2023-12-15 at 15 13 07" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/67a6075f-fb30-4d7d-b36b-0541c9fa42f7">
+
+* 完了した状態
+
+<img width="400" alt="Screenshot 2023-12-15 at 15 17 50" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/10d99178-b2e8-48c5-b303-1e8f2a3010fe">
+
 
 ## データ加工
-* データフローGen2をりよう
-* 簡単なjoinとselect
+
+### 手順概要
+* データフローGen2を利用
 * silverに保存
+ * `bronze`に配置した`orders`と`order_details`を`OrderID`をkeyに左外部結合
+  * `silver.fact_orders`
+ * `addresses`はそのまま
+  * `silver.addresses`へ
 
 ## 可視化
 * コピーツールを用いてRetailSamleDataをコピーしてくる（前工程が追いつかなかった人への救済
