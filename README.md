@@ -95,7 +95,8 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 
 
 # Handson
-下書き
+TSの皆様が対象の手順書です。
+
 ## 1.レイクハウスの作成
 
 ### 手順概要
@@ -147,12 +148,16 @@ AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対し
 * 完璧に再現できなくても「加工できた感」があればOKだと思ってます
 * データフローGen2を利用
 * silverに保存
-  * `bronze`に配置した`orders`と`order_details`を`OrderID`をkeyに左外部結合
-    * `silver.fact_orders`へ
-  * `addresses`はそのまま
-    * `silver.dim_addresses`へ
-  * `customers`はそのまま
-    * `silver.dim_customers`へ
+  * `silver.fact_orders`
+    * `bronze`に配置した`orders`と`order_details`を`OrderID`をkeyに左外部結合
+    * 更に`addresses`と`CustomerID`をkeyひ左外部結合、`AddressID`だけを展開
+    * ID型の列を左側に並び替え
+    * 不要そうな列は適当に削除
+  * `silver.dim_addresses`
+    * `addresses`をそのまま
+  * `silver.dim_customers`
+    * `customers`もそのまま
+    
  
    
 ### 参考
