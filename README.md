@@ -112,7 +112,7 @@ TSの皆様が対象の手順書です。
 <img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/11101cf0-7f88-4d37-966b-ec5f9f7495f1">
 
 
-## データのコピー
+## 2.データのコピー
 
 ### 手順概要
 * パイプラインのコピーアシスタントで、サンプルデータをレイクハウスにコピーしてくる
@@ -142,7 +142,7 @@ TSの皆様が対象の手順書です。
 <img width="400" alt="Screenshot 2023-12-15 at 15 17 50" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/10d99178-b2e8-48c5-b303-1e8f2a3010fe">
 
 
-## データ加工
+## 3.データ加工
 
 ### 手順概要
 * 完璧に再現できなくても「加工できた感」があればOKだと思ってます
@@ -164,9 +164,17 @@ TSの皆様が対象の手順書です。
 * データフローの完成図
 <img width="800" alt="Screenshot 2023-12-15 at 15 44 34" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/369918b6-5140-4e14-a430-5916bd07bf85">
 
-* `shilver`レイクハウスの状態
+## 4.パイプラインの作成
+### 概要
+* 2で作成したデータのコピーが終了したら3で作成したデータの加工を実行する簡単なパイプラインを作成する
+* 作成したパイプラインを実行
 
+### 参考
+* 完成したパイプライン
+<img width="800" alt="Screenshot 2023-12-15 at 16 51 38" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/df55db2b-37c2-48ee-8660-543047fb0b16">
 
+* 実行後の`silver`の状態
+<img width="800" alt="Screenshot 2023-12-15 at 16 53 57" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/3d828e8c-84ca-4476-ae80-7f0068c4da3e">
 
 ## 可視化
 * コピーツールを用いてRetailSamleDataをコピーしてくる（前工程が追いつかなかった人への救済
