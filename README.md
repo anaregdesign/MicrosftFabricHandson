@@ -60,10 +60,13 @@ Microsoft Fabricは従来のPowerBIを拡張する形で提供されます。Pow
 <img width="400" alt="Screenshot 2023-12-15 at 14 48 27" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/ddbb6958-3cd6-4f5c-8604-c8381078cbb4">
 AWS S3やGoogle Cloud Storage、Dataverseなど外部のストレージに対して、レイクハウスが持つ柔軟なインターフェースを提供することができます。
 
+<!--
 #### レイクハウスのミラーリング機能
+<img width="400" srd="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/25a9e40f-4b3e-43e7-a272-5f619f61baa9">
+
 ショートカットがMicrosoft Fabric上にデータの実体を持たないのに対して、ミラーリング機能では外部のデータソースとのリアルタイムな同期・レプリケーションを提供します。
 この機能は将来的にCosmosDBやPostgresSQL、Snowflakeなどの対応が予定されており、ETLの作業を大幅に簡単にします。
-
+-->
 ### SQLエンドポイント
 <img width="400" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/091a0ccf-e835-468b-b259-f1de1ed0ca08">
 
