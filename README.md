@@ -177,6 +177,12 @@ TSの皆様が対象の手順書です。
 <img width="800" alt="Screenshot 2023-12-15 at 16 53 57" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/3d828e8c-84ca-4476-ae80-7f0068c4da3e">
 
 ## 可視化
-* コピーツールを用いてRetailSamleDataをコピーしてくる（前工程が追いつかなかった人への救済
-* セマンティックモデルを作成
-* 簡単な積み上げ棒グラフを作ってもらう
+
+### 概要
+* コピーツールを用いてRetailSamleDataをコピーしてくる
+  * `dimension_city`
+  * `dimension_stock_item`
+  * `fact_sales`
+* セマンティックモデルの作成
+  * `StockItemKey`と`CityKey`でそれぞれのテーブルとリレーションを作成する
+* 自由にグラフ作る
