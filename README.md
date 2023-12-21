@@ -129,17 +129,21 @@ TSの皆様が対象の手順書です。
 
 
 ### 参考
+*
+<img width="800" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/a102d944-72a5-45b8-8d2a-138c8cb537d1">
+
+
 * パイプラインのコピーアシスタントでデモデータに対する接続の作成
 
-<img width="400" alt="Screenshot 2023-12-15 at 15 11 39" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/f08eea98-736c-467e-aef0-52f837effe59">
+<img width="800" alt="Screenshot 2023-12-15 at 15 11 39" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/f08eea98-736c-467e-aef0-52f837effe59">
 
 * ４つそれぞれのファイルに対してコピーアクティビティを作成する
   
-<img width="400" alt="Screenshot 2023-12-15 at 15 13 07" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/67a6075f-fb30-4d7d-b36b-0541c9fa42f7">
+<img width="800" alt="Screenshot 2023-12-15 at 15 13 07" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/67a6075f-fb30-4d7d-b36b-0541c9fa42f7">
 
 * 完了した状態
 
-<img width="400" alt="Screenshot 2023-12-15 at 15 17 50" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/10d99178-b2e8-48c5-b303-1e8f2a3010fe">
+<img width="800" alt="Screenshot 2023-12-15 at 15 17 50" src="https://github.com/anaregdesign/MicrosoftFabricHandson/assets/6128022/10d99178-b2e8-48c5-b303-1e8f2a3010fe">
 
 
 ## 3.データ加工
